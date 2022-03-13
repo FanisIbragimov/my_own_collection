@@ -1,0 +1,8 @@
+---
+- name: Assert create_file_module
+  hosts: localhost
+  tasks:
+    - name: my_own_module
+      my_own_namespace.files.my_own_module:
+        path: ./another_one.txt
+        content: "and again"
